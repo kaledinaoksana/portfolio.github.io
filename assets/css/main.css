@@ -2035,6 +2035,9 @@ input, select, textarea {
 
 		}
 
+
+
+
 /* Box */
 
 	.box {
@@ -2967,7 +2970,7 @@ input, select, textarea {
 					content: '';
 					display: block;
 					position: absolute;
-					top: 50%;
+					top: 10%;
 					width: calc(50% - 6rem);
 					border-top: solid 2px;
 				}
