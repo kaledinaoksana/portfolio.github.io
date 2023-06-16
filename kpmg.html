@@ -58,7 +58,7 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>KPMG Online Internship</h1>
+									<h1>KPMG Virtual Internship</h1>
 									<a href="https://www.theforage.com/virtual-internships/theme/m7W4GMqeT3bh9Nb2c/KPMG-Data-Analytics-Virtual-Internship?ref=FR6p4zePLHx99D9Tk"><span class="label">KPMG Virtual Internship</span></a></li>
 									
 								</header>
@@ -88,6 +88,23 @@
 									  with the following 3 phases as follows - Data Exploration; Model Development and 
 									  Interpretation.
 								</p>
+
+								<h3>
+									
+									Data Quality Framework Table
+								</h3>
+
+								<ol>
+									<li><b> Accuracy: </b>Correct Values</li>
+									<li><b> Completeness: </b>Data Fields with Values</li>
+									<li><b> Consistency: </b>Values Free from Contradiction</li>
+									<li><b> Currency: </b>Values up to Date</li>
+									<li><b> Relevancy: </b>Data Items with Value Meta-data</li>
+									<li><b> Validity: </b>Data Containing Allowable values</li>
+									<li><b> Uniqueness: </b>Records that are Duplicated</li>
+								</ol>
+
+
 									
 
 								<h3>I. Data Quality Assessment</h3>
@@ -96,18 +113,25 @@
 									decisions. 
 									<ul>
 
-										<li><b>Additional customer_id's in the 'Transactions table' and 'Customer Address table'
+										<li><b>Additional "customer_id" in the <code><b>TRANSACTIONS</b></code> and <code><b>CUSTOMER ADDRESS</b></code>
 										</b></li>
 
 										<p><i>
-											Mitigation: Please ensure that all tables are from the same period. Only customers in the Customer Master
+											Mitigation: Please ensure that all tables are from the same period. Only customers in the Customer Demographic
 											list will be used as a training set for our model.
 										</i></p>
 
 										<p>
+											<ol>
+												<li>demographic[”id”] = [1:4000]</li>
+												<li>address[”id”] = [1:4000] + [4001, 4002, 4003] - [3, 10, 22, 23]</li>
+												<li>transactions [”id”]: [1:3500] - [852, 869, 1373, 2074, 2660, 3229, 3236]</li>
+											</ol>
+										</p>
+
+										<p>
 											This indicates that the data received may not be in sync with each other which may skew the analysis
-											 results if there are missing data records. Please refer to excel file 'data_outliers.xlsx' 
-											 for the list of outliers between tables. 
+											 results if there are missing data records.
 										</p>
 
 
@@ -119,7 +143,7 @@
 											prediction. Else, if it is a core field, impute based on distribution in the training dataset. 
 										</i></p>
 
-										<h5><b><code>Customer demographic</code> - 3 999 rows</b></h5>
+										<h5><b><code>Customer demographic</code> - 4 000 rows</b></h5>
 										<div class="table-wrapper">
 											<table>
 												<tr>
@@ -159,8 +183,7 @@
 												
 
 										</div>
-										<p>Percent of missing: <b>3.39%</b></p>
-										<p>Percent of rows with na: <b>34.25%</b></p>
+										
 
 
 										<h5><b><code>Customer address</code> - 3 999 rows</b></h5>
@@ -188,8 +211,8 @@
 												
 												
 										</div>
-										<p>Percent of missing: <b>0%</b></p>
-												<p>Percent of rows with na: <b>0%</b></p>
+										
+										
 										<h5><b><code>Transactions</code> - 20 000 rows</b></h5>
 										<div class="table-wrapper">
 											<table>
@@ -229,12 +252,18 @@
 												
 												
 										</div>
-										<p>Percent of missing: <b>0.59%</b></p>
-										<p>Percent of rows with na: <b>2.77%</b></p>
+										<p>Percent of rows with na before: <b>2.77%</b></p>
+										<p>Replacing values in the column 'online_order'. This field would be automatically filled with one when employee use paying online.</p>
+										 <p><code>df.loc[df['online_order'].isnull(), 'online_order'] = 0.0</code></p>
+										 
 										<p> 
-											For key datasets, such as transactions, less than 1% of transactions (totalling less than 0.1% of
-											revenue) have missing fields. These records have been removed from the training dataset.
+											For key datasets, such as transactions, less than 1% (0.985%) of transactions have missing fields (totalling less than 0.1% (1.7e-14%) of revenue) . These records have been removed from the training dataset.
+											
 										 </p>
+										 
+										 <p>Drop rows where column 'brand' ('product_line','product_class') is NULL</p>
+										 <p><code>df = df.loc[(df['brand'].notnull()) & (df['product_line'].notnull())]</code></p>
+										 <p>Percent of rows with na: <b>0%</b></p>
 
 
 
