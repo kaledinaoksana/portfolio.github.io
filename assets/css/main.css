@@ -316,6 +316,7 @@ input, select, textarea {
 	code {
 		background: rgba(220, 220, 220, 0.25);
 		border-color: #eeeeee;
+		font-weight: bold;
 	}
 
 	hr {
