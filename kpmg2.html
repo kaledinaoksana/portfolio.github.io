@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>Risen - FREE Bootstrap 5 Resume/CV Template For Developers</title>
+	
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Profolio Bootstrap 5 Template">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+	<link rel="shortcut icon" href="favicon.ico"> 
+	
+	<!-- Google Fonts -->	
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<!-- Bootstrpa Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+
+	<!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="assets/css/risen.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/main.css">
+
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+			p { text-indent: 25px; 
+				margin-top: 0.25em; /* Отступ сверху */
+				margin-bottom: 0.25em; /* Отступ снизу */
+                color: #1E2738;
+                text-align: justify;
+			}
+			h3 { 
+				margin-top: 1.25em; /* Отступ сверху */
+				margin-bottom: 1.00em; /* Отступ снизу */
+			}
+			h5 { 
+				margin-top: 2.75em; /* Отступ сверху */
+				margin-bottom: 1.00em; /* Отступ снизу */
+			}
+			table{ 
+				margin-top: 0.50em; /* Отступ сверху */
+				margin-bottom: 0.5em; /* Отступ снизу */
+			}
+			.textcols {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 100%;
+			}
+			.textcols-item {
+				display: flex;
+				flex-direction: column;
+				flex-basis: 100%;
+				flex: 1;
+				height: 30%;
+			}
+			.textcols-item + .textcols-item {
+				margin-left: 5%;
+			}
+            
+
+		  </style>
+</head> 
+
+
+<body>
+	
+	<header>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #19202e;">
+					<div class="container-fluid" style="padding-left: 16%; padding-right: 16%;">
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-mdb-toggle="collapse"
+						data-mdb-target="#navbarExample01"
+						aria-controls="navbarExample01"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<i class="fas fa-bars"></i>
+					</button>
+					
+					<div class="collapse navbar-collapse" id="navbarExample01">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 120%;">
+						<li class="nav-item active" style="padding-left: 10%; padding-right: 10%;">
+							<a class="resume-section-heading" aria-current="page" href="#"><i class=" bi bi-person"></i>CV</a>
+						</li>
+						<li class="nav-item" style="padding-left: 10%; padding-right: 10%;">
+							<a class="resume-section-heading" href="index.html"><i class=" bi bi-award"></i>Portfolio</a>
+						</li>
+					</ul>
+
+
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-size: 120%;">
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.linkedin.com/in/oksana-kaledina/"><i class="fab fa-linkedin"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.kaggle.com/oksanakaledina"><i class="fab fa-kaggle"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://github.com/kaledinaoksana"><i class="fab fa-github"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://t.me/kaledinaoa"><i class="fab fa-telegram"></i></a>
+						</li>
+					</ul>
+
+
+
+				</div>
+			</div>
+
+		</nav>
+	</header>
+
+	<div class="container-fluid">
+			
+        <div class="main-content-wrapper">
+            <div class="container-fluid" >
+            
+                <div class="resume-wrapper mx-auto rounded-5" style="background-color: #FFFFFF;">
+                    <div class="resume-header px-4 px-lg-5" >
+                        <div class="resume-profile-holder text-center">
+                            
+                            <h2 class="resume-name text-uppercase" style="color: #19202e;">KPMG Virtual Internship</h2>
+
+                            <div class="resume-summary-desc">
+                                <p>Sprocket Central Pty Ltd has given us a new list of <b>1000 potential customers</b>
+                                    with their demographics and attributes. 
+                                However, these customers do not have prior transaction history with the organisation.
+                                </p>
+                                <p>The marketing team at Sprocket Central Pty Ltd is sure that, if correctly analysed,
+                                    the data would reveal useful customer insights which could help optimise resource 
+                                    allocation for targeted marketing. Hence, improve performance by focusing on high 
+                                    value customers.
+                                </p>
+                                <p>For context, Sprocket Central Pty Ltd is a long-standing KPMG client whom specialises 
+                                    in high-quality bikes and accessible cycling accessories to riders. Their marketing 
+                                    team is looking to boost business by analysing their existing customer dataset to 
+                                    determine customer trends and behaviour.
+                                </p>
+                                <p>Using the existing 3 datasets (<code><b>CUSTOMER DEMOGRAPHIC</b></code>, 
+                                    <code><b>CUSTOMER ADDRESS</b></code> and <code><b>TRANSACTIONS</b></code>) as a labelled dataset, 
+                                    please recommend which of these 1000 new customers should be targeted to drive the most value for the 
+                                    organisation.
+                                </p>
+                                <p>In building this recommendation, we need to start with a PowerPoint presentation which
+                                    outlines the approach which we will be taking. The client has agreed on a 3 week scope
+                                    with the following 3 phases as follows - Data Exploration; Model Development and 
+                                    Interpretation.
+                                </p>
+                            </div>
+                            
+                            <h3>
+                                
+                                Data Quality Framework Table
+                            </h3>
+
+                            <ol>
+                                <li><b> Accuracy: </b>Correct Values</li>
+                                <li><b> Completeness: </b>Data Fields with Values</li>
+                                <li><b> Consistency: </b>Values Free from Contradiction</li>
+                                <li><b> Currency: </b>Values up to Date</li>
+                                <li><b> Relevancy: </b>Data Items with Value Meta-data</li>
+                                <li><b> Validity: </b>Data Containing Allowable values</li>
+                                <li><b> Uniqueness: </b>Records that are Duplicated</li>
+                            </ol>
+
+                            <h3>I. Data Quality Assessment</h3>
+                            <p > Notable data quality issues that were encountered and the methods used to mitigate the identified data
+                                inconsistencies are as follows. Furthermore, recommendations have been provided to avoid the reoccurrence of data quality issues and improve the accuracy of the underlying data used to drive business
+                                decisions. 
+                                <ul>
+
+                                    <li><b>Additional "customer_id" in the <code><b>TRANSACTIONS</b></code> and <code><b>CUSTOMER ADDRESS</b></code>
+                                    </b></li>
+
+                                    <p><i>
+                                        Mitigation: Please ensure that all tables are from the same period. Only customers in the Customer Demographic
+                                        list will be used as a training set for our model.
+                                    </i></p>
+
+                                    <p>
+                                        <ol>
+                                            <li>demographic[”id”] = [1:4000]</li>
+                                            <li>address[”id”] = [1:4000] + [4001, 4002, 4003] - [3, 10, 22, 23]</li>
+                                            <li>transactions [”id”]: [1:3500] - [852, 869, 1373, 2074, 2660, 3229, 3236]</li>
+                                        </ol>
+                                    </p>
+
+                                    <p>
+                                        This indicates that the data received may not be in sync with each other which may skew the analysis
+                                            results if there are missing data records.
+                                    </p>
+
+
+
+                                    <li><b>Various columns have empty values in certain records</b></li>
+
+                                    <p><i>
+                                        Mitigation: If only a small number of rows are empty, filter out the record entirely from the training set for
+                                        prediction. Else, if it is a core field, impute based on distribution in the training dataset. 
+                                    </i></p>
+
+                                    <h5><b><code>Customer demographic</code> - 4 000 rows</b></h5>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <tr>
+                                                <th><b>COLUMN</b></th>
+                                                <th>customer_id</th>
+                                                <th>first_name</th>
+                                                <th>last_name</th>
+                                                <th>gender</th>
+                                                <th>past_3_years_bike_related_purchases</th>
+                                                <th>DOB</th>
+                                                <th>job_title</th>
+                                                <th>job_industry_category</th>
+                                                <th>wealth_segment</th>
+                                                <th>deceased_indicator</th>
+                                                <th>default</th>
+                                                <th>owns_car</th>
+                                                <th>tenure</th>
+                                            </tr>
+                                            <tr>
+                                                <th><b>NULLS</b></th>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td style="color: red; font-weight: bold;">125</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td style="color: red; font-weight: bold;">87</td>
+                                                <td style="color: red; font-weight: bold;">506</td>
+                                                <td style="color: red; font-weight: bold;">656</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td style="color: red; font-weight: bold;">302</td>
+                                                <td>0</td>
+                                                <td style="color: red; font-weight: bold;">87</td>
+                                            </tr>
+                                            </table> 
+                                            
+                                            
+
+                                    </div>
+                                    
+
+
+                                    <h5><b><code>Customer address</code> - 3 999 rows</b></h5>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <tr>
+                                            <th><b>COLUMN</b></th>
+                                                <th>customer_id</th>
+                                                <th>address</th>
+                                                <th>postcode</th>
+                                                <th>state</th>
+                                                <th>country</th>
+                                                <th>property_valuation</th>
+                                            </tr>
+                                            <tr>
+                                                <th><b>NULLS</b></th>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            </table>
+                                            
+                                            
+                                    </div>
+                                    
+                                    
+                                    <h5><b><code>Transactions</code> - 20 000 rows</b></h5>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <tr>
+                                                <th><b>COLUMN</b></th>
+                                                <th>transaction_id</th>
+                                                <th>product_id</th>
+                                                <th>customer_id</th>
+                                                <th>transaction_date</th>
+                                                <th>online_order</th>
+                                                <th>order_status</th>
+                                                <th>brand</th>
+                                                <th>product_line</th>
+                                                <th>product_class</th>
+                                                <th>product_size</th>
+                                                <th>list_price</th>
+                                                <th>standard_cost</th>
+                                                <th>product_first_sold_date</th>
+                                            </tr>
+                                            <tr>
+                                                <th><b>NULLS</b></th>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td style="color: red; font-weight: bold;">360</td>
+                                                <td>0</td>
+                                                <td style="color: red; font-weight: bold;">197</td>
+                                                <td style="color: red; font-weight: bold;">197</td>
+                                                <td style="color: red; font-weight: bold;">197</td>
+                                                <td style="color: red; font-weight: bold;">197</td>
+                                                <td>0</td>
+                                                <td style="color: red; font-weight: bold;">197</td>
+                                                <td style="color: red; font-weight: bold;">197</td>
+                                            </tr>
+                                            </table>
+                                            
+                                            
+                                    </div>
+                                    <p>Percent of rows with na before: <b>2.77%</b></p>
+                                    <p>Replacing values in the column 'online_order'. This field would be automatically filled with one when employee use paying online.</p>
+                                        <p><code>df.loc[df['online_order'].isnull(), 'online_order'] = 0.0</code></p>
+                                        
+                                    <p> 
+                                        For key datasets, such as transactions, less than 1% (0.985%) of transactions have missing fields (totalling less than 0.1% (1.7e-14%) of revenue) . These records have been removed from the training dataset.
+                                        
+                                        </p>
+                                        
+                                        <p>Drop rows where column 'brand' ('product_line','product_class') is NULL</p>
+                                        <p><code>df = df.loc[(df['brand'].notnull()) & (df['product_line'].notnull())]</code></p>
+                                        <p>Percent of rows with na: <b>0%</b></p>
+
+
+
+                                    <li><b>Inconsistent data type for the sameattribute</b></li>
+                                    <p><i>
+                                        Mitigation: Convert selected records in characters to numeric. Remove non-numeric characters from string.
+                                    </i></p>
+                                    <p><i>Recommendation: Ensure that fact tables in the given database have constraints on data types
+                                    </i></p>
+                                    <div class="textcols">
+
+                                        <div class="textcols-item">
+                                            <h5><b><code>Customer demographic</code></b></h5>
+                                            <ul>
+                                                <li>"customer_id" to int</li>
+                                                <li>"past 3 years bike related purchases" to int</li>
+                                                <li>"DOB" to date</li>
+                                                <li>"tenure" to int</li>
+                                            </ul>
+                                            
+                                            
+                                            
+                                        </div>
+
+                                        <div class="textcols-item">
+                                            <h5><b><code>Customer address</code></b></h5>
+                                            <ul>
+                                                <li>"customer_id" to int</li>
+                                                <li>"property_valuation" to int</li>
+                                            </ul>
+                                            
+                                        </div>
+
+                                        <div class="textcols-item">
+                                            <h5><b><code>Transactions</code></b></h5>
+                                            <ul>
+                                                <li>"transaction_id" to int</li>
+                                                <li>"product_id" to int</li>
+                                                <li>"customer_id" to int</li>
+                                                <li>"transaction_date" to date</li>
+                                                <li>"online_order" to bool</li>
+                                                <li>"list_price" to float</li>
+                                                <li>"standard_cost" to float</li>
+                                                <li>"product_first_sold_date" to date</li>
+                                            </ul>
+                                            
+                                        </div>
+
+                                    </div>
+                                    <p> 
+                                        Having different data types for a given field make it difficult to interpret results at the later stage.
+                                        Therefore, appropriate data transformations are made to ensure consistent data types for a given field.
+                                        </p>
+
+
+
+
+
+
+
+
+                                    <li><b>Inconsistent values for the same attribute</b></li>
+                                    <p><i>
+                                        Mitigation: Use regular expression to replaced extended values into abbreviations to ensure consistency across addresses. 
+                                    </i></p><p><i>Recommendation: Enforce a drop-down list for the user entering the data rather than a free text field
+                                    </i></p>
+                                    
+                                    <div class="textcols">
+
+                                        <div class="textcols-item">
+                                            <h5><b><code>Customer demographic</code></b></h5>
+                                            <p><b>COLUMN "gender"</b></p>
+                                            <ol>
+                                                <li>'Female' like 'Female', 'Femal','F'</li>
+                                                <li>'Male' like 'Male', 'M'</li>
+                                            <ol>
+                                        </div>
+
+                                        <div class="textcols-item">
+                                            <h5><b><code>Customer address</code></b></h5>
+                                            <p><b>COLUMN "state"</b></p>
+                                            <ol>
+                                                <li>'VIC' like 'VIC', 'Victoria'</li>
+                                                <li>'NSW' like 'NSW', 'New South Wales'</li>
+                                            <ol>
+                                        </div>
+
+                                        <div class="textcols-item">
+                                            <h5><b><code>Transactions</code></b></h5>
+                                            <p>-</p>
+                                        </div>
+
+                                    </div>
+                                
+                                    <p> 
+                                        In order to construct meaningful variables for the model, the data has been cleaned to avoid multiple representations 
+                                        of the same value. Additionally, gender records where 'U' have been replaced based on the distribution from the
+                                            training dataset. 
+                                        </p>
+
+
+
+
+
+
+
+                                    
+                                </ul>
+                            </p>
+                            
+                            <h3>II. Data Insights</h3>
+
+                            <a href="https://www.abs.gov.au/statistics?opendocument&ref=topBar"><span class="label">Australian Bureau of Statistics</span></a></li>
+                            
+                            <h4>Corellation</h4>
+                            <p> 'age' and 'tenture' = 0.45</p>
+                            <p> 'list_price' and 'standard_cost' = 0.55</p>
+                            <!-- <a class="image main"><img src="images/corr.png" alt="" /></a> -->
+
+                            <h3>III. Data Insights and Presentation</h3>
+
+                            <h2>Certificate</h2>
+                            <a class="image fit" style="padding: 0% 10% 0% 10%;">
+                                <img src="images/KPMG_cert.png" alt="" />
+                            </a>
+
+                            <div class="actions d-flex justify-content-center " style="padding: 5%">
+                                <a href="covid.html" class="button" style="color: #1E2738;">
+                                    <h3 class="resume-section-heading text-uppercase m-2 align-items-center" style="color: #1E2738;">
+                                        <i class="fas fa-eye mr-2"></i>View Next Project
+                                    </h3>
+                                </a>
+							</div>
+                           
+
+                        </div>
+                            
+                    </div>
+                </div>
+                
+                        
+            </div><!--//container-fluid-->
+        </div><!--//main-content-wrapper-->
+	</div><!--//container-->
+	
+	<footer class="footer text-center py-4">
+		<small class="copyright" style="color: #FFFFFF">2023 </span><i class="bi bi-heart-fill" style="color:#fe655c"></i> </small>
+	</footer>
+
+</body>
