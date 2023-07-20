@@ -1,5 +1,10 @@
 <head>
 	<?php include 'head.php'; ?>
+    <?php define('SITE', "https://kaledinaoksana.github.io/portfolio.github.io/");?>
+    <?php define('CV_link', "https://kaledinaoksana.github.io/portfolio.github.io/website/cv.php");?>
+    <?php define('PORTFOLIO_link', "https://kaledinaoksana.github.io/portfolio.github.io/website/portfolio.php");?>
+    <?php define('WELCOME_link', "https://kaledinaoksana.github.io/portfolio.github.io/index.html");?>
+    
 </head> 
 
 <body>
@@ -21,13 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarExample01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 120%;">
              <li class="nav-item active" style="padding-left: 10%; padding-right: 10%;">
-                <a class="resume-section-heading" aria-current="page" href="../../index.html"><i class="bi bi-lightning-charge"></i>Welcome</a>
+                <a class="resume-section-heading" aria-current="page" href="<?php echo WELCOME_link; ?>"><i class="bi bi-lightning-charge"></i>Welcome</a>
             </li>
             <li class="nav-item active" style="padding-left: 10%; padding-right: 10%;">
-                <a class="resume-section-heading" aria-current="page" href="../cv.php"><i class=" bi bi-person"></i>CV</a>
+                <a class="resume-section-heading" aria-current="page" href="<?php echo CV_link; ?>"><i class=" bi bi-person"></i>CV</a>
             </li>
             <li class="nav-item" style="padding-left: 10%; padding-right: 10%;">
-                <a class="resume-section-heading" href="../portfolio.php"><i class=" bi bi-award"></i>Portfolio</a>
+                <a class="resume-section-heading" href="<?php echo WELCOME_link; ?>"><i class=" bi bi-award"></i>Portfolio</a>
             </li>
             <!--
             <li class="nav-item" style="padding-left: 10%; padding-right: 10%;">
