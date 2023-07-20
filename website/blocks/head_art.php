@@ -20,8 +20,8 @@
 <script defer src="../../assets/fontawesome/js/all.js"></script>
 
 <!-- Theme CSS -->  
-<link id="theme-style" rel="stylesheet" href="../assets/css/risen.css">
-<link id="theme-style" rel="stylesheet" href="../assets/css/main.css">
+<link id="theme-style" rel="stylesheet" href="../../assets/css/risen.css">
+<link id="theme-style" rel="stylesheet" href="../../assets/css/main.css">
 
 <style>
     body {
