@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="refresh" content="0;url=cv.php">
-        <title>Redirecting...</title>
-        <style>
-            body {
-            background-color: #19202E; 
-            margin: 0; 
-            padding: 0; 
-            }
-        </style>
-    </head>
-    <body>
-    </body>
+<head>
+  <title>Redirecting to index.php...</title>
+  <style>
+    body {
+      background-color: #19202E; 
+      margin: 0; 
+      padding: 0; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    p {
+      color: #FFFFFF;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <p>Redirecting to index.php...</p>
+
+  <script>
+    // Выполнить переход на index.php через 3 секунды
+    setTimeout(function() {
+      window.location.href = "index.php";
+    }, 3000); // Задержка в миллисекундах (в данном случае 3 секунды)
+  </script>
+</body>
 </html>
