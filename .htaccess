@@ -1,1 +1,3 @@
 DirectoryIndex /website/cv.php
+RewriteEngine On
+RewriteRule ^index\.html$ /website/cv.php [R=301,L]
