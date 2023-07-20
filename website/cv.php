@@ -9,7 +9,7 @@
 
 	<!-- Navbar -->
 	<header>
-        <?php include 'blocks/nav-bar.php'; ?>
+        <?php include 'blocks/nav-bar-main.php'; ?>
     </header>
 
 	<div class="container-fluid">
