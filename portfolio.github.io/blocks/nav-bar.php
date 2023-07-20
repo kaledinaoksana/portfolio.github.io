@@ -21,13 +21,13 @@
         <div class="collapse navbar-collapse" id="navbarExample01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 120%;">
              <li class="nav-item active" style="padding-left: 10%; padding-right: 10%;">
-                <a class="resume-section-heading" aria-current="page" href="../../index.html"><i class="bi bi-lightning-charge"></i>Welcome</a>
+                <a class="resume-section-heading" aria-current="page" href="index.html"><i class="bi bi-lightning-charge"></i>Welcome</a>
             </li>
             <li class="nav-item active" style="padding-left: 10%; padding-right: 10%;">
-                <a class="resume-section-heading" aria-current="page" href="/website/cv.php"><i class=" bi bi-person"></i>CV</a>
+                <a class="resume-section-heading" aria-current="page" href="/portfolio.github.io/cv.php"><i class=" bi bi-person"></i>CV</a>
             </li>
             <li class="nav-item" style="padding-left: 10%; padding-right: 10%;">
-                <a class="resume-section-heading" href="/website/portfolio.php"><i class=" bi bi-award"></i>Portfolio</a>
+                <a class="resume-section-heading" href="/portfolio.github.io/portfolio.php"><i class=" bi bi-award"></i>Portfolio</a>
             </li>
             <!--
             <li class="nav-item" style="padding-left: 10%; padding-right: 10%;">
