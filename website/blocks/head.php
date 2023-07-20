@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <!-- FontAwesome JS -->
-<script defer src="../assets/fontawesome/js/all.js"></script>
+<script defer src="assets/fontawesome/js/all.js"></script>
 
 <!-- Theme CSS -->  
-<link id="theme-style" rel="stylesheet" href="../assets/css/risen.css">
+<link id="theme-style" rel="stylesheet" href="assets/css/risen.css">
