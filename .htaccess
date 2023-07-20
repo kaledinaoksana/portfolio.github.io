@@ -1,5 +1,1 @@
-DirectoryIndex cv.php index.html
-
-RewriteEngine On
-
-RewriteRule !^website/ website%{REQUEST_URI} [L,NC]
+DirectoryIndex website/cv.php
