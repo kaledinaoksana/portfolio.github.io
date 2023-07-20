@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="refresh" content="0;url=cv.php">
-        <title>Redirecting...</title>
-        <style>
-            body {
-            background-color: #19202E; 
-            margin: 0; 
-            padding: 0; 
-            }
-        </style>
-    </head>
-    <body>
-    </body>
-</html>
-
-<a href="https://web-studio24.ru/x.pdf" download>Скачать PDF</a>
-
-<i class=" bi bi-person"></i>
+<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
+<a href="/website/docs/KaledinaOA_CV.pdf" download style="color: white">
+<i class="resume-section-heading-icon bi bi-file-earmark-pdf"></i> Download CV</a></h3>
+<hr>

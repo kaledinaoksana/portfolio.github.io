@@ -65,6 +65,8 @@
 
                             <!-- RIGHT COLUMN -->
                             <div class="col-12 col-lg-4 ps-lg-4">
+
+                                
                                 <!-- HARD SKILLS -->
                                 <section class="resume-skills-section resume-section">
                                     <?php include 'cv_blocks/hard_skills.php'; ?> 
@@ -80,6 +82,10 @@
                                 <!-- LANGUAGES -->
                                 <section class="resume-lang-section resume-section">
                                     <?php include 'cv_blocks/lang.php'; ?> 
+                                </section><hr>
+                                <!-- Download CV -->
+                                <section class="resume-lang-section resume-section">
+                                    <?php include 'cv_blocks/download_cv.php'; ?> 
                                 </section>
                             </div><!-- END OF RIGHT COLUMN -->
 
