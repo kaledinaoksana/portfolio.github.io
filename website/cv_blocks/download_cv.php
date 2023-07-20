@@ -16,3 +16,5 @@
 </html>
 
 <a href="https://web-studio24.ru/x.pdf" download>Скачать PDF</a>
+
+<i class=" bi bi-person"></i>
