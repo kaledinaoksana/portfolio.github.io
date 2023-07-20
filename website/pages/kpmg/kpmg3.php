@@ -2,6 +2,6 @@
 
 <h2>Certificate</h2>
 <a class="image fit" style="padding: 0% 10% 0% 10%;">
-    <img src="/../images/KPMG_cert.png" alt="" />
+    <img src="../../../website/images/KPMG_cert.png" alt="" />
 </a>
 
