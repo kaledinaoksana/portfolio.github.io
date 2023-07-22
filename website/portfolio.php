@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <title>KPMG project</title>
-    <?php include 'website/blocks/head.php'; ?>
+    <?php include 'blocks/head.php'; ?>
 </head> 
 <body>
     <header>
@@ -11,7 +11,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #19202e;">
             <div class="container-fluid" style="padding-left: 16%; padding-right: 16%;">
                 <!-- Navbar content -->
-                <?php include 'website/blocks/nav-bar-main.php'; ?>
+                <?php include 'blocks/nav-bar-main.php'; ?>
             </div>
         </nav>
     </header>
@@ -24,22 +24,22 @@
                         <div class="resume-profile-holder text-center">
 
                             <!-- Content of the portfolio -->
-                            <?php include 'website/articles/kpmg_art.php'; ?>
+                            <?php include 'articles/kpmg_art.php'; ?>
                             <hr>
                             <!-- Row for two columns -->
                             <div class="row">
                                 <div class="col-md-6">
-                                    <?php include 'website/articles/amazon_art.php'; ?>
+                                    <?php include 'articles/amazon_art.php'; ?>
                                 </div>
                                 <div class="col-md-6">
-                                    <?php include 'website/articles/covid_art.php'; ?>
+                                    <?php include 'articles/covid_art.php'; ?>
                                 </div>
                             </div>
                             <hr>
                             <!-- Row for two columns -->
                             <div class="row">
                                 <div class="col-md-6">
-                                    <?php include 'website/articles/crypto_art.php'; ?>
+                                    <?php include 'articles/crypto_art.php'; ?>
                                 </div>
                             </div>
 
@@ -51,7 +51,7 @@
     </div>
 
     <!-- Footer -->
-    <?php include 'website/blocks/footer.php'; ?>
+    <?php include 'blocks/footer.php'; ?>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

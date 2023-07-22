@@ -2,14 +2,14 @@
 <html lang="en"> 
 <head>
 	<title>CV Kaledina Oksana</title>
-	<?php include 'website/blocks/head.php'; ?>
+	<?php include 'blocks/head.php'; ?>
 </head> 
 
 <body>
 
 	<!-- Navbar -->
 	<header>
-        <?php include 'website/blocks/nav-bar-main.php'; ?>
+        <?php include 'blocks/nav-bar-main.php'; ?>
     </header>
 
 	<div class="container-fluid">
@@ -19,7 +19,7 @@
                     <div class="resume-header px-4 px-lg-5">
                         <div class="resume-profile-holder text-center">
                             <!-- CV HEADER -->
-                            <?php include 'website/cv_blocks/cv_header.php'; ?>
+                            <?php include 'cv_blocks/cv_header.php'; ?>
                         </div>
                     </div>
                     <div class="resume-body p-4 p-lg-5">
@@ -30,7 +30,7 @@
 
                                     <!-- ABOUT ME -->
                                 <section class="resume-summary-section resume-section">
-                                    <?php include 'website/cv_blocks/about.php'; ?> 
+                                    <?php include 'cv_blocks/about.php'; ?> 
                                 </section><hr>
                                 
                                 <!-- TIMELINE -->
@@ -41,10 +41,10 @@
                                     
                                     <div class="resume-timeline position-relative">
                                         <article class="resume-timeline-item position-relative pb-5"> 
-                                            <?php include 'website/cv_blocks/work_analyst.php'; ?> 
+                                            <?php include 'cv_blocks/work_analyst.php'; ?> 
                                         </article>
                                         <article class="resume-timeline-item position-relative pb-5">
-                                            <?php include 'website/cv_blocks/job_fti.php'; ?> 
+                                            <?php include 'cv_blocks/job_fti.php'; ?> 
                                         </article>
                                     </div>
                                     <!-- EDUCATION -->
@@ -53,11 +53,11 @@
                                     <div class="resume-timeline position-relative">
                                         <!-- MASTER -->
                                         <article class="resume-timeline-item position-relative pb-5">
-                                            <?php include 'website/cv_blocks/master.php'; ?> 
+                                            <?php include 'cv_blocks/master.php'; ?> 
                                         </article>
                                         <!-- BACHELOR -->
                                         <article class="resume-timeline-item position-relative pb-5">
-                                            <?php include 'website/cv_blocks/bachelor.php'; ?> 
+                                            <?php include 'cv_blocks/bachelor.php'; ?> 
                                         </article>
                                     </div>
                                 </section><!--// TIMELINE --><hr>
@@ -69,23 +69,23 @@
                                 
                                 <!-- HARD SKILLS -->
                                 <section class="resume-skills-section resume-section">
-                                    <?php include 'website/cv_blocks/hard_skills.php'; ?> 
+                                    <?php include 'cv_blocks/hard_skills.php'; ?> 
                                 </section><hr>
                                 <!-- SOFT SKILLS -->
                                 <section class="resume-skills-section resume-section">
-                                    <?php include 'website/cv_blocks/soft_skills.php'; ?> 
+                                    <?php include 'cv_blocks/soft_skills.php'; ?> 
                                 </section><hr>
                                 <!-- PROJECTS -->
                                 <section class="resume-projects-section resume-section">
-                                    <?php include 'website/cv_blocks/projects.php'; ?> 
+                                    <?php include 'cv_blocks/projects.php'; ?> 
                                 </section><hr>
                                 <!-- LANGUAGES -->
                                 <section class="resume-lang-section resume-section">
-                                    <?php include 'website/cv_blocks/lang.php'; ?> 
+                                    <?php include 'cv_blocks/lang.php'; ?> 
                                 </section><hr>
                                 <!-- Download CV -->
                                 <section class="resume-lang-section resume-section">
-                                    <?php include 'website/cv_blocks/download_cv.php'; ?> 
+                                    <?php include 'cv_blocks/download_cv.php'; ?> 
                                 </section>
                             </div><!-- END OF RIGHT COLUMN -->
 
