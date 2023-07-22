@@ -5,7 +5,7 @@
 <body>
 <header>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #19202e;">
-    <div class="container-fluid" style="padding-left: 16%; padding-right: 16%;">
+    <div class="container-fluid" style="padding-left: 16%; padding-right: 16%; ">
         <button
             class="navbar-toggler"
             type="button"

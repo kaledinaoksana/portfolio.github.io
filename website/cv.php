@@ -97,8 +97,11 @@
 	</div><!--//container-->
 	
     <!-- Footer -->
-	<footer class="footer text-center py-4">
-		<small class="copyright">2023 </span><i class="bi bi-heart-fill" style="color:#fe655c"></i> </small>
-	</footer>
+    <?php include 'blocks/footer.php'; ?>
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="assets/fontawesome/js/all.js"></script>
 
 </body>
