@@ -9,7 +9,7 @@
 	
     <!-- Navbar -->
     <header>
-        <?php include(__DIR__.'/../blocks/nav-bar.php') ?>  
+        <?php include(__DIR__.'/../blocks/nav-bar-page.php') ?>  
     </header>
 
     <!-- Main -->
