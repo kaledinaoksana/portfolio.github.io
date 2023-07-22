@@ -1,5 +1,5 @@
 <!-- Meta -->
-<meta charset="utf-8
+<meta charset="utf-8">
 <link rel="shortcut icon" href="/images/favicon.ico"> 
 
 <!-- Google Fonts -->	
