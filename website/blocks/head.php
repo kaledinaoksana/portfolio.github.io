@@ -1,6 +1,6 @@
 <!-- Meta -->
 <meta charset="utf-8">
-<link rel="shortcut icon" href="/images/favicon.ico"> 
+<link rel="shortcut icon" href="../images/favicon.ico"> 
 
 <!-- Google Fonts -->	
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

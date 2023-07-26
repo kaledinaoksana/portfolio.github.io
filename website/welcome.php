@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>KPMG project</title>
-    <?php include 'blocks/head.php'; ?>
+    <title>Welcome</title>
+    <?php include(__DIR__.'/blocks/head.php'); ?>
 </head> 
 <body>
     <header>
@@ -11,7 +11,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #19202e;">
             <div class="container-fluid" style="padding-left: 16%; padding-right: 16%">
                 <!-- Navbar content -->
-                <?php include 'blocks/nav-bar-main.php'; ?>
+                <?php include(__DIR__.'/blocks/nav-bar-main.php'); ?>
             </div>
         </nav>
     </header>
@@ -58,7 +58,7 @@
     </div>
 
     <!-- Footer -->
-    <?php include 'blocks/footer.php'; ?>
+    <?php include(__DIR__.'/blocks/footer.php'); ?>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
