@@ -7,13 +7,7 @@
 </head> 
 <body>
     <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #19202e;">
-            <div class="container-fluid" style="padding-left: 16%; padding-right: 16%">
-                <!-- Navbar content -->
-                <?php include(__DIR__.'/blocks/nav-bar-main.php'); ?>
-            </div>
-        </nav>
+        <?php include(__DIR__.'/blocks/nav-bar-main.php'); ?>
     </header>
 
     <div class="container-fluid">
