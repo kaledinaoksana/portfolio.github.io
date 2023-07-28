@@ -16,7 +16,13 @@
             I honed my skills in data exploration, visualization, and segmentation, 
             equipping me with practical knowledge for effectively leveraging data in marketing strategies.
         </div>
-        
+
+        <div
+            <a class="image fit" style="padding: 0% 5% 0% 5%;" href="https://public.tableau.com/app/profile/oksana.kaledina/viz/KPMGSprocketCentral_16905751292170/main?publish=yes">
+                <img src="../../website/images/main_art.png" class="img-fluid" alt="" />
+            </a>
+        </div>
+
         <div class="actions special d-flex justify-content-center" style="padding: 2% ">
             <a href="/website/pages/kpmg.php" class="button">
                 <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
