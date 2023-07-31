@@ -94,31 +94,33 @@
 
     <img src="../images/HighInfRateByPop.png" class="img-fluid" alt="" style="width: 90%; height: auto;"/>
                             </code></pre>
-
-                            <p>Examining Countries with the Highest Death Count per Population, Sorted by Continent:</p>
+<!-- 1 DONE -->
+                            <p>Examining Countries with the Highest Death Count per Population:</p>
                             <pre><code class="language-sql">
     <span class="blue-bold">SELECT</span> location, <span class="br-bold">MAX</span>(total_deaths) <span class="blue-bold">AS</span> TotalDeathCount
     <span class="blue-bold">FROM</span> Covid19..Covid
-    <span class="blue-bold">WHERE</span> continent <span class="blue-bold">IS NULL</span>
+    <span class="blue-bold">WHERE</span> continent <span class="blue-bold">IS NOT NULL</span>
     <span class="blue-bold">GROUP BY</span> location
     <span class="blue-bold">ORDER BY</span> TotalDeathCount <span class="blue-bold">DESC</span>
 
     <img src="../images/totaldeathcount.png" class="img-fluid" alt="" style="width:37%; height: auto;"/>
                             </code></pre>
-
-                            <p>Displaying Continents with the Highest Death Count per Population:</p>
-                            <pre><code class="language-sql">
+<!-- 2 DONE -->
+<p>Displaying Continents with the Highest Death Count per Population:</p>
+<pre><code class="language-sql">
     <span class="blue-bold">SELECT</span> continent, <span class="br-bold">MAX</span>(total_deaths) <span class="blue-bold">AS</span> TotalDeathCount
     <span class="blue-bold">FROM</span> Covid19..Covid
-    <span class="blue-bold">WHERE</span> continent <span class="blue-bold">IS NULL</span>
+    <span class="blue-bold">WHERE</span> continent <span class="blue-bold">IS NOT NULL</span>
     <span class="blue-bold">GROUP BY</span> continent
     <span class="blue-bold">ORDER BY</span> TotalDeathCount <span class="blue-bold">DESC</span>
 
     <img src="../images/cont.png" class="img-fluid" alt="" style="width: 37%; height: auto;"/>
-                            </code></pre>
+</code></pre>
 
-                            <p>Global information on the total number of COVID-19 infection cases, total number of deaths, and the overall death percentage:</p>
-                            <pre><code class="language-sql">
+
+<!-- 3 -->
+<p>Global information on the total number of COVID-19 infection cases, total number of deaths, and the overall death percentage:</p>
+<pre><code class="language-sql">
     <span class="blue-bold">SELECT</span> <span class="br-bold">SUM</span>(new_cases) <span class="blue-bold">AS</span> TotalCases, <span class="br-bold">SUM</span>(new_deaths) <span class="blue-bold">AS</span> TotalDeaths,
     <span class="blue-bold">CASE</span> 
         <span class="blue-bold">WHEN </span> <span class="br-bold">SUM</span>(new_cases) = 0 <span class="blue-bold">OR</span> <span class="br-bold">SUM</span>(new_deaths) = 0
@@ -126,45 +128,58 @@
         <span class="blue-bold">ELSE</span>  <span class="br-bold">SUM</span>(new_deaths)/<span class="br-bold">SUM</span>(new_cases)*100
         <span class="blue-bold">END AS</span>  DeathPercentage
     <span class="blue-bold">FROM</span> Covid19..Covid     
-    <span class="blue-bold">WHERE</span> continent <span class="blue-bold">IS NULL</span> 
-    <span class="blue-bold">ORDER BY</span> 1
+    <span class="blue-bold">WHERE</span> continent <span class="blue-bold">IS NOT NULL</span> 
+    <span class="blue-bold">ORDER BY</span> 1 
 
     <img src="../images/global.png" class="img-fluid" alt="" style="width: 50%; height: auto;"/>
-    
-    <span class="blue-bold">SELECT</span> continent, location, date, population, new_vaccinations, <span class="br-bold">SUM</span>(new_vaccinations) 
-    <span class="blue-bold">OVER</span> (<span class="blue-bold">PARTITION BY</span> location <span class="blue-bold">ORDER BY</span> location, date) <span class="blue-bold">AS</span> RollingPeopleVaccinated
-    <span class="blue-bold">FROM</span> Covid19..Covid
-    <span class="blue-bold">WHERE</span> continent <span class="blue-bold">IS NULL</span>
-    <span class="blue-bold">ORDER BY</span> 2,3
-                            </code></pre>
+</code></pre>
 
-                            <h4>Use CTE</h4>
-                            <pre><code class="language-sql">
-    <span class="blue-bold">WITH</span> PopvsVac(Continent, Location, Date, Population,new_vaccinations, RollingPeopleVaccinated)
+<!-- 4 PART BY -->
+<p>Partititon by:</p>
+<pre><code class="language-sql">
+    <span class="blue-bold">SELECT</span> continent, location, date, population, new_vaccinations, <span class="br-bold">SUM</span>(new_vaccinations) 
+        <span class="blue-bold">OVER</span> (<span class="blue-bold">PARTITION BY</span> location <span class="blue-bold">ORDER BY</span> location, date) <span class="blue-bold">AS</span> RollingPeopleVaccinated
+    <span class="blue-bold">FROM</span> Covid19..Covid
+    <span class="blue-bold">WHERE</span> continent <span class="blue-bold">IS NULL AND</span> new_vaccinations <span class="blue-bold">IS NOT NULL</span>
+    <span class="blue-bold">ORDER BY</span> 2,3
+
+    <img src="../images/part_new_vac.png" class="img-fluid" alt="" style="width: 90%; height: auto;"/>
+</code></pre>
+
+<!-- 5 CTE -->
+<p>Use CTE:</p>
+<pre><code class="language-sql">
+    <span class="blue-bold">WITH</span> PopvsVac(Location, Date, Population,new_vaccinations, RollingPeopleVaccinated)
     <span class="blue-bold">AS</span>
     (
-        <span class="blue-bold">SELECT</span> continent, location, date, population, new_vaccinations, <span class="br-bold">SUM</span>(new_vaccinations) 
-        <span class="blue-bold">OVER</span> (<span class="blue-bold">PARTITION BY</span> location <span class="blue-bold">ORDER BY</span> location, date) <span class="blue-bold">AS</span> RollingPeopleVaccinated
+        <span class="blue-bold">SELECT</span> location, date, population, new_vaccinations <span class="blue-bold">AS</span> new_vac, <span class="br-bold">SUM</span>(new_vaccinations) 
+            <span class="blue-bold">OVER</span> (<span class="blue-bold">PARTITION BY</span> location <span class="blue-bold">ORDER BY</span> location, date) <span class="blue-bold">AS</span> RollingPeopleVac
         <span class="blue-bold">FROM</span> Covid19..Covid
         <span class="blue-bold">WHERE</span> continent <span class="blue-bold">IS NULL</span>
     )
-    <span class="blue-bold">SELECT</span> *, (RollingPeopleVaccinated/Population)*100
+    <span class="blue-bold">SELECT</span> *, (RollingPeopleVaccinated/Population)*100 <span class="blue-bold">AS</span> PercentVac
     <span class="blue-bold">FROM</span> PopvsVac
-    <span class="blue-bold">WHERE</span> location <span class="blue-bold">LIKE</span> '%Russia%'
-    <span class="blue-bold">ORDER BY</span> 2,3
-                            </code></pre>
+    <span class="blue-bold">WHERE</span> location <span class="blue-bold">LIKE</span> '%rance' <span class="blue-bold">AND</span> new_vaccinations <span class="blue-bold">IS NOT NULL</span>
+    <span class="blue-bold">ORDER BY</span> 1,2
 
-                            <h4>Temp Table</h4>
-                            <pre><code class="language-sql">
-    <span class="blue-bold">DROP TABLE IF EXISTS</span> #PercentPopulationVaccinated
+    <img src="../images/france.png" class="img-fluid" alt="" style="width: 90%; height: auto;"/>
+</code></pre>
+
+<!-- 6 TEMP TABLE -->
+<p>Temp Table:</p>
+<pre><code class="language-sql">
+    <span class="blue-bold">DROP TABLE IF EXISTS</span> <span class="br-bold">#PercentPopulationVaccinated</span>
     <span class="blue-bold">USE</span> Covid19
     <span class="blue-bold">GO</span>
     <span class="blue-bold">CREATE VIEW</span> PercentPopulationVaccinated <span class="blue-bold">AS</span> 
         <span class="blue-bold">SELECT</span> continent, location, date, population, new_vaccinations, <span class="br-bold">SUM</span>(new_vaccinations) 
-        <span class="blue-bold">OVER</span> (<span class="blue-bold">PARTITION BY</span> location <span class="blue-bold">ORDER BY</span> location, date) <span class="blue-bold">AS</span> RollingPeopleVaccinated
+            <span class="blue-bold">OVER</span> (<span class="blue-bold">PARTITION BY</span> location <span class="blue-bold">ORDER BY</span> location, date) <span class="blue-bold">AS</span> RollingPeopleVaccinated
         <span class="blue-bold">FROM</span> Covid19..Covid
-        <span class="blue-bold">WHERE</span> continent <span class="blue-bold">IS NULL</span>
-                            </code></pre>
+        <span class="blue-bold">WHERE</span> continent <span class="blue-bold">IS NULL</span> <span class="blue-bold">AND</span> new_vaccinations <span class="blue-bold">IS NOT NULL</span>
+    <span class="blue-bold">SELECT</span> * <span class="blue-bold">FROM</span> PercentPopulationVaccinated
+        
+    <img src="../images/part_new_vac.png" class="img-fluid" alt="" style="width: 90%; height: auto;"/>
+</code></pre>
 
 
 
