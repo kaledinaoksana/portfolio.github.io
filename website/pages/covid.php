@@ -46,22 +46,26 @@
 
                             <!-- Skills-->
                             <ul class="list-inline" padding="0% 0% 0% 0%">
-                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">MySQL</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">SQL</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">SQL Querying</span></li>
                                 <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Azure Data Studio</span></li>
                                 <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">SSMS</span></li>
-                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Docker</span></li>   
-                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">SQL</span></li>                         
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Docker</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Database Management</span></li>  
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Subqueries</span></li>                        
                             </ul>
+
+                            
 
                             <!-- Main Part of the Project -->
 
-                            <p>In my project, I utilized data from an open-source dataset on COVID-19 and transferred 
+                            <p> In <a href="https://github.com/kaledinaoksana/Covid19">my project</a>, I utilized data from an open-source dataset on COVID-19 and transferred 
                                 it into a database, honing my SQL skills in the process. By leveraging the available 
                                 COVID-19 data, I created a well-structured and efficient database using SQL queries. 
                                 This allowed me to practice querying, organizing, and analyzing the information, 
                                 gaining valuable experience in working with databases and enhancing my SQL proficiency. 
                                 Through this project, I developed a deeper understanding of COVID-19 data management and 
-                                improved my ability to extract meaningful insights from large datasets.<br>
+                                improved my ability to extract meaningful insights from large datasets. 
                             </p>
 
                             <h3>Preparation</h3>
@@ -74,10 +78,8 @@
                             </p><p>
                             <strong>Step 4:</strong> Azure Data Studio Launch (Mac M1): server - localhost (User name: SA, Password: psw)
                             </p><p>
-                            <strong>Step 5:</strong> Data Import into the Database (Mac M1): download extension "Import Wizard" in Azure Data Studio and import DB from .csv
+                            <strong>Step 5:</strong> Data Import into the Database (Mac M1): download extension "Import Wizard" and import DB from .csv
                             </p><p>
-                            <br>
-
 
                             <h3>SQL queries</h3>
 
@@ -135,7 +137,7 @@
 </code></pre>
 
 <!-- 4 PART BY -->
-<p>Partititon by:</p>
+<p>Using PARTITION BY:</p>
 <pre><code class="language-sql">
     <span class="blue-bold">SELECT</span> continent, location, date, population, new_vaccinations, <span class="br-bold">SUM</span>(new_vaccinations) 
         <span class="blue-bold">OVER</span> (<span class="blue-bold">PARTITION BY</span> location <span class="blue-bold">ORDER BY</span> location, date) <span class="blue-bold">AS</span> RollingPeopleVaccinated
@@ -147,7 +149,7 @@
 </code></pre>
 
 <!-- 5 CTE -->
-<p>Use CTE:</p>
+<p>Using CTE:</p>
 <pre><code class="language-sql">
     <span class="blue-bold">WITH</span> PopvsVac(Location, Date, Population,new_vaccinations, RollingPeopleVaccinated)
     <span class="blue-bold">AS</span>
@@ -166,7 +168,7 @@
 </code></pre>
 
 <!-- 6 TEMP TABLE -->
-<p>Temp Table:</p>
+<p>Using TEMP TABLE:</p>
 <pre><code class="language-sql">
     <span class="blue-bold">DROP TABLE IF EXISTS</span> <span class="br-bold">#PercentPopulationVaccinated</span>
     <span class="blue-bold">USE</span> Covid19
@@ -184,7 +186,15 @@
 
 
 
+                            <h3>Conclusion</h3>
 
+                            <p>
+                            In summary, the "COVID-19 Data Analysis with SQL" project successfully utilized 
+                            SQL queries and database management to extract and analyze COVID-19 data. It 
+                            improved SQL skills and demonstrated the significance of data analytics in addressing 
+                            real-world challenges. The findings contribute to a better understanding of the pandemic 
+                            and its potential impact on public health decisions. 
+                            </p>
 
 
 

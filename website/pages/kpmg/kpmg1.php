@@ -7,10 +7,22 @@
 <body>
 
     <h2 class="resume-name text-uppercase" style="color: #19202e;">KPMG Virtual Internship</h2>
-    
+    <!-- Skills-->
+    <ul class="list-inline" padding="0% 0% 0% 0%">
+        <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Python</span></li>
+        <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Quality Assesment</span></li>
+        <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Analitical Dashboard creation</span></li>
+        <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Analytics</span></li>   
+        <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Customer Segmentation</span></li> 
+        <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Driven Presentations</span></li>
+        <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Dashboards</span></li>
+        <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Visualizations</span></li>   
+        <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Presentations</span></li> 
+        <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Excel</span></li>                        
+    </ul>
     <!-- sum -->
     <div class="resume-summary-desc">
-        <p>Sprocket Central Pty Ltd has given us a new list of <b>1000 potential customers</b>
+        <p> <i class="fas fa-eye mr-2" href="https://github.com/kaledinaoksana/KPMG-internship"></i> Sprocket Central Pty Ltd has given us a new list of <b>1000 potential customers</b>
             with their demographics and attributes. 
         However, these customers do not have prior transaction history with the organisation.
         </p>

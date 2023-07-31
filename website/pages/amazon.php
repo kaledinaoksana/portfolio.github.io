@@ -21,9 +21,24 @@
                         <div class="resume-profile-holder text-center">
                             <!-- Content of the Project -->
                             <h2 class="resume-name text-uppercase" style="color: #19202e;">Amazon Scrapper</h2>
-                            <!-- Main Part of the Project -->
+                            <!-- Skills-->
+                            <ul class="list-inline" padding="0% 0% 0% 0%">
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Web Scraping</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Python Programming</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Parsing</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Database Management</span></li>   
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">SQL</span></li> 
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Manipulation (clean, transform data)</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">HTTP Requests</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">XPath/CSS Selectors</span></li>   
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Analysis</span></li> 
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Git</span></li>                        
+                            </ul>
 
-                            
+                            <!-- Main Part of the Project -->
+                            <p>In <a href="https://github.com/kaledinaoksana/amazon-web-scrapper">my project</a>...
+                            </p>
+
                             <!-- Botton NEXT --> 
                             <div class="actions d-flex justify-content-center " style="padding: 5%">
                                 <a href="covid.php" class="button" style="color: #1E2738;">

@@ -19,6 +19,7 @@
                 <div class="resume-wrapper mx-auto rounded-5" style="background-color: #FFFFFF;">
                     <div class="resume-header px-4 px-lg-5" >
                         <div class="resume-profile-holder text-center">
+                            
                             <!-- Content of the Project -->
                             <?php include(__DIR__.'/kpmg/kpmg1.php') ?>
                             <?php include(__DIR__.'/kpmg/kpmg2.php') ?>

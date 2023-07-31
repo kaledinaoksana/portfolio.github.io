@@ -21,6 +21,23 @@
                         <div class="resume-profile-holder text-center">
                             <!-- Content of the Project -->
                             <h2 class="resume-name text-uppercase" style="color: #19202e;">Cryptocurrency API</h2>
+                            <!-- Skills-->
+                            <ul class="list-inline" padding="0% 0% 0% 0%">
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Collection and Integration</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Cleaning and Preprocessing</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Exploration and Descriptive Analysis</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Database Management</span></li>   
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">SQL Querying</span></li> 
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Time Series Analysis</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Data Visualization</span></li>   
+                                <li class="list-inline-item"><span class="badge resume-skill-badge" style="color: black">Statistical Analysis</span></li>                        
+                            </ul>
+                            <!-- Main Part of the Project -->
+                            <p>In <a href="https://github.com/kaledinaoksana/cryptoAPI">my project</a>...
+                            </p>
+
+
+
                             <!-- Botton NEXT --> 
                             <div class="actions d-flex justify-content-center " style="padding: 5%">
                                 <a href="kpmg.php" class="button" style="color: #1E2738;">
