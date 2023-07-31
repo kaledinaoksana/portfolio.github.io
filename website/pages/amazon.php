@@ -21,6 +21,9 @@
                         <div class="resume-profile-holder text-center">
                             <!-- Content of the Project -->
                             <h2 class="resume-name text-uppercase" style="color: #19202e;">Amazon Scrapper</h2>
+                            <!-- Main Part of the Project -->
+
+                            
                             <!-- Botton NEXT --> 
                             <div class="actions d-flex justify-content-center " style="padding: 5%">
                                 <a href="covid.php" class="button" style="color: #1E2738;">
